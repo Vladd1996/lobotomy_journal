@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="mainmenutext">
+        <item> "sephirahs"</item>
+        <item> "anomalys"</item>
+        <item> "Ordeals"</item>
+    </array>
+</resources>
