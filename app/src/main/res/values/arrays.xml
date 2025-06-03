@@ -5,4 +5,265 @@
         <item> "anomalys"</item>
         <item> "Ordeals"</item>
     </array>
+    <array name = "anomaly_number">
+        <item>"awesome"</item>
+        <item>"0"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"4"</item>
+        <item>"6"</item>
+        <item>"8"</item>
+        <item>"9"</item>
+        <item>"12"</item>
+        <item>"15"</item>
+        <item>"18"</item>
+        <item>"20"</item>
+        <item>"27"</item>
+        <item>"30"</item>
+        <item>"31"</item>
+        <item>"32"</item>
+        <item>"37"</item>
+        <item>"40"</item>
+        <item>"41"</item>
+        <item>"42"</item>
+        <item>"43"</item>
+        <item>"44"</item>
+        <item>"45"</item>
+        <item>"46"</item>
+        <item>"47"</item>
+        <item>"49"</item>
+        <item>"50"</item>
+        <item>"51"</item>
+        <item>"52"</item>
+        <item>"53"</item>
+        <item>"54"</item>
+        <item>"55"</item>
+        <item>"56"</item>
+        <item>"57"</item>
+        <item>"58"</item>
+        <item>"60"</item>
+        <item>"61"</item>
+        <item>"62"</item>
+        <item>"63"</item>
+        <item>"64"</item>
+        <item>"66"</item>
+        <item>"67"</item>
+        <item>"68"</item>
+        <item>"69"</item>
+        <item>"70"</item>
+        <item>"71"</item>
+        <item>"72"</item>
+        <item>"73"</item>
+        <item>"74"</item>
+        <item>"75"</item>
+        <item>"76"</item>
+        <item>"77"</item>
+        <item>"78"</item>
+        <item>"79"</item>
+        <item>"80"</item>
+        <item>"81"</item>
+        <item>"82"</item>
+        <item>"83"</item>
+        <item>"84"</item>
+        <item>"85"</item>
+        <item>"86"</item>
+        <item>"87"</item>
+        <item>"88"</item>
+        <item>"89"</item>
+        <item>"90"</item>
+        <item>"91"</item>
+        <item>"92"</item>
+        <item>"93"</item>
+        <item>"94"</item>
+        <item>"95"</item>
+        <item>"96"</item>
+        <item>"97"</item>
+        <item>"98"</item>
+        <item>"99"</item>
+        <item>"100"</item>
+        <item>"101"</item>
+        <item>"102"</item>
+        <item>"103"</item>
+        <item>"104"</item>
+        <item>"105"</item>
+        <item>"106"</item>
+        <item>"107"</item>
+        <item>"108"</item>
+        <item>"109"</item>
+        <item>"110"</item>
+    </array>
+    <array name = "anomaly_name">
+        <item>"You're Bald..."</item>
+        <item>"Standard Training-Dummy Rabbit"</item>
+        <item>"Scorched Girl"</item>
+        <item>"One Sin and Hundreds of Good Deeds"</item>
+        <item>"The Queen of Hatred"</item>
+        <item>"Happy Teddy Bear"</item>
+        <item>"The Red Shoes"</item>
+        <item>"Theresia"</item>
+        <item>"Old Lady"</item>
+        <item>"Nameless Fetus"</item>
+        <item>"The Lady Facing the Wall"</item>
+        <item>"Nothing There"</item>
+        <item>"1.76 MHz"</item>
+        <item>"Singing Machine"</item>
+        <item>"The Silent Orchestra"</item>
+        <item>"Warm-hearted Woodsman"</item>
+        <item>"The Snow Queen"</item>
+        <item>"Big Bird"</item>
+        <item>"All-Around Helper"</item>
+        <item>"Snow White's Apple"</item>
+        <item>"Spider Bud"</item>
+        <item>"Beauty and the Beast"</item>
+        <item>"Plague Doctor"</item>
+        <item>"WhiteNight"</item>
+        <item>"Don't Touch Me"</item>
+        <item>"Rudolta of the Sleigh"</item>
+        <item>"Queen Bee"</item>
+        <item>"Bloodbath"</item>
+        <item>"Opened Can of WellCheers"</item>
+        <item>"Alriune"</item>
+        <item>"Forsaken Murderer"</item>
+        <item>"Child of the Galaxy"</item>
+        <item>"Punishing Bird"</item>
+        <item>"Little Red Riding Hooded Mercenary"</item>
+        <item>"Big and Will be Bad Wolf"</item>
+        <item>"Fragment of the Universe"</item>
+        <item>"Crumbling Armor"</item>
+        <item>"Judgement Bird"</item>
+        <item>"Apocalypse Bird"</item>
+        <item>"The King of Greed"</item>
+        <item>"The Little Prince"</item>
+        <item>"Laetitia"</item>
+        <item>"The Funeral of the Dead Butterflies"</item>
+        <item>"Der Freischütz"</item>
+        <item>"Dream of a Black Swan"</item>
+        <item>"The Dreaming Current"</item>
+        <item>"The Burrowing Heaven"</item>
+        <item>"The Knight of Despair"</item>
+        <item>"The Naked Nest"</item>
+        <item>"Mountain of Smiling Bodies"</item>
+        <item>"Schadenfreude"</item>
+        <item>"The Heart of Aspiration"</item>
+        <item>"Notes from a Crazed Researcher"</item>
+        <item>"Flesh Idol"</item>
+        <item>"Giant Tree Sap"</item>
+        <item>"Mirror of Adjustment"</item>
+        <item>"Shelter from the 27th of March"</item>
+        <item>"Fairy Festival"</item>
+        <item>"Meat Lantern"</item>
+        <item>"We Can Change Anything"</item>
+        <item>"Express Train to Hell"</item>
+        <item>"Scarecrow Searching for Wisdom"</item>
+        <item>"Dimensional Refraction Variant"</item>
+        <item>"CENSORED"</item>
+        <item>"Skin Prophecy"</item>
+        <item>"Portrait of Another World"</item>
+        <item>"Today's Shy Look"</item>
+        <item>"Blue Star"</item>
+        <item>"You Must Be Happy"</item>
+        <item>"Luminous Bracelet"</item>
+        <item>"Behavior Adjustment"</item>
+        <item>"Old Faith and Promise"</item>
+        <item>"Porccubus"</item>
+        <item>"Void Dream"</item>
+        <item>"Grave of Cherry Blossoms"</item>
+        <item>"The Firebird"</item>
+        <item>"Yin"</item>
+        <item>"Yang"</item>
+        <item>"Backward Clock"</item>
+        <item>"Il Pianto della Luna"</item>
+        <item>"Army in Black"</item>
+        <item>"Ppodae"</item>
+        <item>"Parasite Tree"</item>
+        <item>"Melting Love"</item>
+        <item>"Clouded Monk"</item>
+    </array>
+    <array name = "anomaly_code">
+        <item>Bald-Is-Awesome!</item>
+        <item>0-00-00(-T)</item>
+        <item>F-01-02(-T)</item>
+        <item>O-03-03(-Z)</item>
+        <item>O-01-04(-W)</item>
+        <item>T-04-06(-H)</item>
+        <item>O-04-08(-H)</item>
+        <item>T-09-09(-T)</item>
+        <item>O-01-12(-T)</item>
+        <item>O-01-15(-H)</item>
+        <item>F-01-18(-T)</item>
+        <item>O-06-20(-A)</item>
+        <item>T-06-27(-T)</item>
+        <item>O-05-30(-H)</item>
+        <item>T-01-31(-A)</item>
+        <item>F-05-32(-H)</item>
+        <item>F-01-37(-H)</item>
+        <item>O-02-40(-W)</item>
+        <item>T-05-41(-H)</item>
+        <item>F-04-42(-W)</item>
+        <item>T-02-43(-T)</item>
+        <item>F-02-44(-T)</item>
+        <item>O-01-45(-Z)</item>
+        <item>T-03-46(-A)</item>
+        <item>O-05-47(-Z)</item>
+        <item>F-02-49(-H)</item>
+        <item>T-04-50(-W)</item>
+        <item>T-05-51(-T)</item>
+        <item>F-05-52(-Z)</item>
+        <item>T-04-53(-W)</item>
+        <item>T-01-54(-T)</item>
+        <item>O-01-55(-H)</item>
+        <item>O-02-56(-T)</item>
+        <item>F-01-57(-W)</item>
+        <item>F-02-58(-W)</item>
+        <item>O-03-60(-T)</item>
+        <item>O-05-61(-T)</item>
+        <item>O-02-62(-W)</item>
+        <item>O-02-63(-A)</item>
+        <item>O-01-64(-W)</item>
+        <item>O-04-66(-W)</item>
+        <item>O-01-67(-H)</item>
+        <item>T-01-68(-H)</item>
+        <item>F-01-69(-H)</item>
+        <item>F-02-70(-W)</item>
+        <item>T-02-71(-W)</item>
+        <item>O-04-72(-W)</item>
+        <item>O-01-73(-W)</item>
+        <item>O-02-74(-W)</item>
+        <item>T-01-75(-A)</item>
+        <item>O-05-76(-H)</item>
+        <item>T-09-77(-T)</item>
+        <item>T-09-78(-H)</item>
+        <item>T-09-79(-W)</item>
+        <item>T-09-80(-H)</item>
+        <item>O-09-81(-Z)</item>
+        <item>T-09-82(-H)</item>
+        <item>F-04-83(-Z)</item>
+        <item>O-04-84(-T)</item>
+        <item>T-09-85(-Z)</item>
+        <item>T-09-86(-W)</item>
+        <item>F-01-87(-H)</item>
+        <item>O-03-88(-W)</item>
+        <item>O-03-89(-A)</item>
+        <item>T-09-90(-T)</item>
+        <item>O-09-91(-H)</item>
+        <item>O-01-92(-T)</item>
+        <item>O-03-93(-A)</item>
+        <item>T-09-94(-Z)</item>
+        <item>O-09-95(-T)</item>
+        <item>O-09-96(-T)</item>
+        <item>T-09-97(-Z)</item>
+        <item>O-02-98(-H)</item>
+        <item>T-02-99(-T)</item>
+        <item>O-04-100(-T)</item>
+        <item>O-02-101(-W)</item>
+        <item>O-05-102(-W)</item>
+        <item>O-07-103(-W)</item>
+        <item>D-09-104(-W)</item>
+        <item>D-01-105(-W)</item>
+        <item>D-01-106(-Z)</item>
+        <item>D-02-107(-T)</item>
+        <item>D-04-108(-W)</item>
+        <item>D-03-109(-A)</item>
+        <item>D-01-110(-W)</item>
+    </array>
 </resources>

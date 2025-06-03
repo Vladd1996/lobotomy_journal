@@ -1,5 +1,6 @@
 package com.example.lobotomyjournal;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -12,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements MainMenuInterface{
     int[] options_image={R.drawable.main_menu_tree1,R.drawable.anomaly_main_menu_image,R.drawable.ordeals_main_menu};
     ArrayList<MainMenuModel> main_menu=new ArrayList<>();
 
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             RecyclerView recyclerView=findViewById(R.id.MainMenuRec);
             setMain_menu();
-            MainMenuRecyclerViewAdapter adapter=new MainMenuRecyclerViewAdapter(main_menu,this);
+            MainMenuRecyclerViewAdapter adapter=new MainMenuRecyclerViewAdapter(main_menu,this,this);
             recyclerView.setAdapter(adapter);
             recyclerView.setLayoutManager(new LinearLayoutManager(this));
             return insets;
@@ -40,4 +41,24 @@ private void setMain_menu()
         main_menu.add(new MainMenuModel(MainMenuNumbers[i],options_image[i]));
     }
 }
+
+    @Override
+    public void onItemClick(int position)
+    {
+        if(position==0)
+        {
+            Intent intent=new Intent(this,sephiras.class);
+            startActivity(intent);
+        }
+        else if(position==1)
+        {
+            Intent intent=new Intent(this,anomalitys.class);
+            startActivity(intent);
+        }
+        else if(position==2)
+        {
+            Intent intent=new Intent(this,ordeals.class);
+            startActivity(intent);
+        }
+    }
 }

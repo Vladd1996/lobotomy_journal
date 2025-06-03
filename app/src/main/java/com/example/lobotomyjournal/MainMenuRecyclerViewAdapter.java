@@ -14,12 +14,14 @@ import java.util.ArrayList;
 
 public class MainMenuRecyclerViewAdapter extends RecyclerView.Adapter<MainMenuRecyclerViewAdapter.MyViewHolder>
 {
+    private final MainMenuInterface mainMenuInterface;
     Context context;
     ArrayList<MainMenuModel> MainMenuModels;
 
-    public MainMenuRecyclerViewAdapter(ArrayList<MainMenuModel> mainMenuModels, Context context) {
+    public MainMenuRecyclerViewAdapter(ArrayList<MainMenuModel> mainMenuModels, Context context,MainMenuInterface mainMenuInterface) {
         MainMenuModels = mainMenuModels;
         this.context = context;
+        this.mainMenuInterface=mainMenuInterface;
     }
 
     @NonNull
@@ -27,7 +29,7 @@ public class MainMenuRecyclerViewAdapter extends RecyclerView.Adapter<MainMenuRe
     public MainMenuRecyclerViewAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater=LayoutInflater.from(context);
         View view=inflater.inflate(R.layout.mainmenurow,parent,false);
-        return new MainMenuRecyclerViewAdapter.MyViewHolder(view);
+        return new MainMenuRecyclerViewAdapter.MyViewHolder(view,mainMenuInterface);
     }
 
     @Override
@@ -46,10 +48,23 @@ public class MainMenuRecyclerViewAdapter extends RecyclerView.Adapter<MainMenuRe
         TextView textView;
         ImageView imageView;
 
-        public MyViewHolder(@NonNull View itemView) {
+        public MyViewHolder(@NonNull View itemView,MainMenuInterface mainMenuInterface) {
             super(itemView);
             textView=itemView.findViewById(R.id.textView);
             imageView=itemView.findViewById(R.id.imageView);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if(mainMenuInterface!=null)
+                    {
+                        int pos=getAdapterPosition();
+                        if(pos!=RecyclerView.NO_POSITION)
+                        {
+                            mainMenuInterface.onItemClick(pos);
+                        }
+                    }
+                }
+            });
         }
     }
 }
