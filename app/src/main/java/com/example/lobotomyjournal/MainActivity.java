@@ -11,6 +11,9 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.lobotomyjournal.anomalyspackages.anomalitys;
+import com.example.lobotomyjournal.sephirahs.sephiras;
+
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements MainMenuInterface{
@@ -47,12 +50,12 @@ private void setMain_menu()
     {
         if(position==0)
         {
-            Intent intent=new Intent(this,sephiras.class);
+            Intent intent=new Intent(this, sephiras.class);
             startActivity(intent);
         }
         else if(position==1)
         {
-            Intent intent=new Intent(this,anomalitys.class);
+            Intent intent=new Intent(this, anomalitys.class);
             startActivity(intent);
         }
         else if(position==2)

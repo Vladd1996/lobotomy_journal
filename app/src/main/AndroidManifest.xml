@@ -16,10 +16,10 @@
             android:name=".ordeals"
             android:exported="false" />
         <activity
-            android:name=".sephiras"
+            android:name=".sephirahs.sephiras"
             android:exported="false" />
         <activity
-            android:name=".anomalitys"
+            android:name=".anomalyspackages.anomalitys"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

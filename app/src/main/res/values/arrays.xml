@@ -266,4 +266,52 @@
         <item>D-03-109(-A)</item>
         <item>D-01-110(-W)</item>
     </array>
+    <array name = "sephirahs_name">
+        <item>Angela</item>
+        <item>Malkuth</item>
+        <item>Yesod</item>
+        <item>Netzach</item>
+        <item>Hod</item>
+        <item>Tiphereth A</item>
+        <item>Tiphereth B</item>
+        <item>Gebura</item>
+        <item>Chesed</item>
+        <item>Hokma</item>
+        <item>Binah</item>
+        <item>A</item>
+    </array>
+    <array name = "sephirahs_description">
+        <item>Calm and collected, with a hint of arrogance</item>
+        <item>Cheerful, enthusiastic, and impatient.
+            She always puts in her best effort and aims for the best results.</item>
+        <item>Strict and uncaring, logical; he constantly wears concealing
+            clothing so that no skin is showing.</item>
+        <item>Pessimistic and unmotivated. Wishes he would be
+            replaced and feels helpless over the deaths of employees.</item>
+        <item>Optimistic and does her best to help everyone.
+            Carries strong wish to be appreciated for her efforts.</item>
+        <item>Up-front, getting straight to the point, yet really immature.</item>
+        <item>Relaxed and positive sibling,optimistic and hopes
+            things will get better in the facility.</item>
+        <item>Rigorous and sometimes rude; tries to suppress
+            Abnormalities with as much force as possible. Despises cowards.</item>
+        <item>Sleepy and mature, likes his coffee. He only pretends to care for his employees.</item>
+        <item>Calm and collected. He considers the death of employees as a cycle.</item>
+        <item>She rarely displays any sort of emotion. Binah has sadistic inclinations.</item>
+        <item>A Machiavellian,willing to sacrifice everything so long as the goal is fulfilled</item>
+    </array>
+    <array name = "sephirahs_layer">
+        <item>whole complex</item>
+        <item>Asiyah</item>
+        <item>Asiyah</item>
+        <item>Asiyah</item>
+        <item>Asiyah</item>
+        <item>Briah</item>
+        <item>Briah</item>
+        <item>Briah</item>
+        <item>Briah</item>
+        <item>Atziluth</item>
+        <item>Atziluth</item>
+        <item>Atziluth</item>
+    </array>
 </resources>
