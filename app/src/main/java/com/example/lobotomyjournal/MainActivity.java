@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.lobotomyjournal.anomalyspackages.anomalitys;
+import com.example.lobotomyjournal.ordeals_menu.ordeals;
 import com.example.lobotomyjournal.sephirahs.sephiras;
 
 import java.util.ArrayList;
@@ -60,7 +61,7 @@ private void setMain_menu()
         }
         else if(position==2)
         {
-            Intent intent=new Intent(this,ordeals.class);
+            Intent intent=new Intent(this, ordeals.class);
             startActivity(intent);
         }
     }

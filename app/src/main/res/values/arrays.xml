@@ -5,6 +5,14 @@
         <item> "anomalys"</item>
         <item> "Ordeals"</item>
     </array>
+    <array name="ordeals_colors">
+        <item> "Amber"</item>
+        <item> "Crimson"</item>
+        <item> "Green"</item>
+        <item> "Indigo"</item>
+        <item> "Violet"</item>
+        <item> "White"</item>
+    </array>
     <array name = "anomaly_number">
         <item>"awesome"</item>
         <item>"0"</item>
@@ -313,5 +321,13 @@
         <item>Atziluth</item>
         <item>Atziluth</item>
         <item>Atziluth</item>
+    </array>
+    <array name = "ordeals_colors_for_menu">
+        <item>#FFBF00</item>
+        <item>#DC143C</item>
+        <item>#00FF00</item>
+        <item>#4B0082</item>
+        <item>#7F00FF</item>
+        <item>#FFFFFF</item>
     </array>
 </resources>
