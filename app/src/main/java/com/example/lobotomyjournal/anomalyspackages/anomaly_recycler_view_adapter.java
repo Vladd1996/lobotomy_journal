@@ -17,10 +17,12 @@ import java.util.ArrayList;
 
 public class anomaly_recycler_view_adapter extends RecyclerView.Adapter<anomaly_recycler_view_adapter.MyViewHolder>
 {
+    private final anomalyties_interface anomalyties_interface;
     Context context;
     ArrayList<anomaly_menu_model> anomalyMenuModels;
 
-    public anomaly_recycler_view_adapter(Context context, ArrayList<anomaly_menu_model> anomalyMenuModels) {
+    public anomaly_recycler_view_adapter(com.example.lobotomyjournal.anomalyspackages.anomalyties_interface anomalytiesInterface, Context context, ArrayList<anomaly_menu_model> anomalyMenuModels) {
+        anomalyties_interface = anomalytiesInterface;
         this.context = context;
         this.anomalyMenuModels = anomalyMenuModels;
     }
@@ -31,7 +33,7 @@ public class anomaly_recycler_view_adapter extends RecyclerView.Adapter<anomaly_
     {
         LayoutInflater layoutInflater=LayoutInflater.from(context);
         View view=layoutInflater.inflate(R.layout.anomalyties_menu_row,parent,false);
-        return new anomaly_recycler_view_adapter.MyViewHolder(view);
+        return new anomaly_recycler_view_adapter.MyViewHolder(view,anomalyties_interface);
     }
 
     @Override
@@ -52,12 +54,25 @@ public class anomaly_recycler_view_adapter extends RecyclerView.Adapter<anomaly_
     {
         TextView anomalynumber,anomalycode,anomalyname;
         ImageView imageView;
-        public MyViewHolder(@NonNull View itemView) {
+        public MyViewHolder(@NonNull View itemView,anomalyties_interface anomalyties_interface) {
             super(itemView);
             anomalynumber=itemView.findViewById(R.id.textView);
             anomalycode=itemView.findViewById(R.id.textView2);
             anomalyname=itemView.findViewById(R.id.textView3);
             imageView=itemView.findViewById(R.id.imageView2);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if(anomalyties_interface!=null)
+                    {
+                        int pos=getAdapterPosition();
+                        if(pos!=RecyclerView.NO_POSITION)
+                        {
+                            anomalyties_interface.on_anom_click(pos);
+                        }
+                    }
+                }
+            });
         }
     }
 }

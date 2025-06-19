@@ -1,5 +1,6 @@
 package com.example.lobotomyjournal.anomalyspackages;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -12,10 +13,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.lobotomyjournal.MainMenuModel;
 import com.example.lobotomyjournal.R;
+import com.example.lobotomyjournal.sephirahs.sephiras;
 
 import java.util.ArrayList;
 
-public class anomalitys extends AppCompatActivity {
+public class anomalitys extends AppCompatActivity implements anomalyties_interface {
     int[] anomalyicon={R.drawable.yourebaldportrait,R.drawable.trainingstandarddummyrabbitportrait,R.drawable.scorchedgirlportrait,
             R.drawable.onesinportrait,R.drawable.thequeenofhatredportrait,
             R.drawable.happyteddybearportrait,R.drawable.redshoesportrait,R.drawable.theresiaportrait,
@@ -55,7 +57,7 @@ public class anomalitys extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             RecyclerView recyclerView = findViewById(R.id.anomaly_main_menu);
             setAnomaly_menu();
-            anomaly_recycler_view_adapter adapter=new anomaly_recycler_view_adapter(this,anomaly_menu);
+            anomaly_recycler_view_adapter adapter=new anomaly_recycler_view_adapter(this,this,anomaly_menu);
             recyclerView.setAdapter(adapter);
             recyclerView.setLayoutManager(new LinearLayoutManager(this));
             return insets;
@@ -71,5 +73,13 @@ public class anomalitys extends AppCompatActivity {
         {
             anomaly_menu.add(new anomaly_menu_model(MainMenuCode[i],MainMenuNumbers[i],MainMenuName[i],anomalyicon[i]));
         }
+    }
+
+    @Override
+    public void on_anom_click(int pos)
+    {
+        Intent intent=new Intent(this, anomaly_page.class);
+        intent.putExtra("pos",pos);
+        startActivity(intent);
     }
 }
