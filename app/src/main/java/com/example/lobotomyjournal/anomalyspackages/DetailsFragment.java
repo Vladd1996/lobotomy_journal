@@ -8,14 +8,19 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.lobotomyjournal.R;
 import com.example.lobotomyjournal.ordeals_menu.ordeals_menu_model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class DetailsFragment extends Fragment {
+    private RecyclerView recyclerView;
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState)
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState)
     {
         View view = inflater.inflate(R.layout.layout_anom_tech_data, container, false);
         if (getArguments() != null)
@@ -46,6 +51,13 @@ public class DetailsFragment extends Fragment {
             textView2.setText(code_name[data]);
             textView6.setText(ThreatLVL[data]);
         }
+        recyclerView = view.findViewById(R.id.anom_tech_data_rec_view);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        List<ManagerialWork> works = new ArrayList<>();
+        works.add(new ManagerialWork("Работа 1", "Описание работы 1"));
+        works.add(new ManagerialWork("Работа 2", "Описание работы 2"));
+        ManagerialWorksAdapter adapter = new ManagerialWorksAdapter(works);
+        recyclerView.setAdapter(adapter);
         return view;
     }
 }
