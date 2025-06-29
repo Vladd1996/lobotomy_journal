@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.lobotomyjournal.R;
-import com.example.lobotomyjournal.ordeals_menu.ordeals_menu_model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -56,7 +55,7 @@ public class DetailsFragment extends Fragment {
         List<ManagerialWork> works = new ArrayList<>();
         works.add(new ManagerialWork("Работа 1", "Описание работы 1"));
         works.add(new ManagerialWork("Работа 2", "Описание работы 2"));
-        ManagerialWorksAdapter adapter = new ManagerialWorksAdapter(works);
+        anomaly_page_rec_view adapter = new anomaly_page_rec_view(works);
         recyclerView.setAdapter(adapter);
         return view;
     }

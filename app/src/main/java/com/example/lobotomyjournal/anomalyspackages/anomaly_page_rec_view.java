@@ -12,23 +12,23 @@ import com.example.lobotomyjournal.R;
 
 import java.util.List;
 
-public class ManagerialWorksAdapter extends RecyclerView.Adapter<ManagerialWorksAdapter.WorkViewHolder> {
+public class anomaly_page_rec_view extends RecyclerView.Adapter<anomaly_page_rec_view.ViewHolder> {
     private List<ManagerialWork> worksList;
 
-    public ManagerialWorksAdapter(List<ManagerialWork> worksList) {
+    public anomaly_page_rec_view(List<ManagerialWork> worksList) {
         this.worksList = worksList;
     }
 
     @NonNull
     @Override
-    public WorkViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_managerial_work, parent, false);
-        return new WorkViewHolder(view);
+                .inflate(R.layout.anomaly_page_rec_view_row, parent, false);
+        return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull WorkViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         ManagerialWork work = worksList.get(position);
         holder.workName.setText(work.getWorkName());
         holder.workDescription.setText(work.getWorkDescription());
@@ -38,11 +38,11 @@ public class ManagerialWorksAdapter extends RecyclerView.Adapter<ManagerialWorks
     public int getItemCount() { return worksList.size(); }
 
     // ViewHolder для элементов списка
-    public static class WorkViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder {
         TextView workName;
         TextView workDescription;
 
-        public WorkViewHolder(@NonNull View itemView) {
+        public ViewHolder(@NonNull View itemView) {
             super(itemView);
             workName = itemView.findViewById(R.id.workName);
             workDescription = itemView.findViewById(R.id.workDescription);
