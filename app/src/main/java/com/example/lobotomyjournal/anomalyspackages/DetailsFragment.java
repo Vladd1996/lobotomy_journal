@@ -21,10 +21,10 @@ public class DetailsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState)
     {
+        int data = getArguments().getInt("pos");
         View view = inflater.inflate(R.layout.layout_anom_tech_data, container, false);
         if (getArguments() != null)
         {
-            int data = getArguments().getInt("pos");
             String[] name=getResources().getStringArray(R.array.anomaly_name);
             String[] ThreatLVL=getResources().getStringArray(R.array.anomaly_threat_level);
             String[] good_result=getResources().getStringArray(R.array.good_result_anom);
@@ -50,11 +50,18 @@ public class DetailsFragment extends Fragment {
             textView2.setText(code_name[data]);
             textView6.setText(ThreatLVL[data]);
         }
+        String[] tips=getResources().getStringArray(R.array.ManagerialWorks);
+        String[][] result=new String[tips.length][];
+        for(int i = 0; i < tips.length; i++) {
+            result[i] = tips[i].split(",,,separator,,,"); // Разделяем элементы по запятой
+        }
         recyclerView = view.findViewById(R.id.anom_tech_data_rec_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         List<ManagerialWork> works = new ArrayList<>();
-        works.add(new ManagerialWork("Работа 1", "Описание работы 1"));
-        works.add(new ManagerialWork("Работа 2", "Описание работы 2"));
+        for(int i=0;i<result[data].length;i++)
+        {
+            works.add(new ManagerialWork("tip "+(i+1)+":",result[data][i]));
+        }
         anomaly_page_rec_view adapter = new anomaly_page_rec_view(works);
         recyclerView.setAdapter(adapter);
         return view;

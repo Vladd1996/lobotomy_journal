@@ -35,7 +35,10 @@ public class anomaly_page_rec_view extends RecyclerView.Adapter<anomaly_page_rec
     }
 
     @Override
-    public int getItemCount() { return worksList.size(); }
+    public int getItemCount()
+    {
+        return worksList.size();
+    }
 
     // ViewHolder для элементов списка
     public static class ViewHolder extends RecyclerView.ViewHolder {
